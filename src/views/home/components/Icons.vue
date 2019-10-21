@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/styles/varibles.scss';
+@import '~assets/styles/variable.scss';
 @import '~assets/styles/mixins.scss';
 .icons /deep/ .swiper-container {
   height: 0;

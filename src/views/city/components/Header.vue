@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/styles/varibles.scss';
+@import '~assets/styles/variable.scss';
 .header {
   position: relative;
   overflow: hidden;
