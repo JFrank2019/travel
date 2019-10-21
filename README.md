@@ -4,30 +4,30 @@
 
 因为使用的是mock数据，需要下载项目后安装依赖查看
 
-## Project setup
+## 安装依赖
 
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 启动服务
 
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 打包项目
 
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### 语法检测&修复
 
 ```
 npm run lint
 ```
 
-### Customize configuration
+### 定制化配置
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
