@@ -5,6 +5,9 @@ function resolve(dir) {
 }
 
 module.exports = {
+  devServer: {
+    open: true
+  },
   chainWebpack: config => {
     config.resolve.alias.set('assets', resolve('src/assets'))
   }
