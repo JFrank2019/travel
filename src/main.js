@@ -8,9 +8,11 @@ import fastClick from 'fastclick'
 fastClick.attach(document.body)
 
 // 重置样式
-import './assets/styles/reset.css'
+import 'assets/styles/reset.css'
 // 解决1px边框问题
-import './assets/styles/border.css'
+import 'assets/styles/border.css'
+// 引入iconfont样式
+import 'assets/iconfont/iconfont.css'
 
 Vue.config.productionTip = false
 
