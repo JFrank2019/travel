@@ -2,7 +2,7 @@
   <div>
     <div class="title">周末去哪儿</div>
     <ul>
-      <li :key="item.id" class="item border-bottom" v-for="item in recommendList">
+      <li :key="item.id" class="item border-bottom" v-for="item in weekendList">
         <div class="item-img-wrapper">
           <img :src="item.imgUrl" alt class="item-img" />
         </div>
@@ -18,35 +18,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data() {
-    return {
-      recommendList: [
-        {
-          id: '0001',
-          imgUrl: 'https://imgs.qunarzz.com/sight/source/1811/7e/476589267ebb41.jpg_r_640x214_bf599709.jpg',
-          title: 'title',
-          desc: 'desc'
-        },
-        {
-          id: '0002',
-          imgUrl: 'https://imgs.qunarzz.com/sight/source/1811/7e/476589267ebb41.jpg_r_640x214_bf599709.jpg',
-          title: 'title',
-          desc: 'desc'
-        },
-        {
-          id: '0003',
-          imgUrl: 'https://imgs.qunarzz.com/sight/source/1811/7e/476589267ebb41.jpg_r_640x214_bf599709.jpg',
-          title: 'title',
-          desc: 'desc'
-        },
-        {
-          id: '0004',
-          imgUrl: 'https://imgs.qunarzz.com/sight/source/1811/7e/476589267ebb41.jpg_r_640x214_bf599709.jpg',
-          title: 'title',
-          desc: 'desc'
-        }
-      ]
-    }
+  props: {
+    weekendList: Array
   }
 }
 </script>
@@ -54,7 +27,6 @@ export default {
 <style lang="scss" scoped>
 @import '~assets/styles/mixins.scss';
 .title {
-  margin-top: 0.1rem;
   line-height: 0.8rem;
   background: #eee;
   text-indent: 0.2rem;
@@ -63,7 +35,7 @@ export default {
   .item-img-wrapper {
     overflow: hidden;
     height: 0;
-    padding-bottom: 33.9%;
+    padding-bottom: 37.09%;
     .item-img {
       width: 100%;
     }

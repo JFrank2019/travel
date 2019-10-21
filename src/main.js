@@ -7,6 +7,10 @@ import store from './store'
 import fastClick from 'fastclick'
 fastClick.attach(document.body)
 
+// 引入axios
+import axios from 'axios'
+Vue.prototype.$http = axios
+
 // 引入vue-awesome-swiper
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 

@@ -17,35 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data() {
-    return {
-      recommendList: [
-        {
-          id: '0001',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1609/7a/7ae8ee7831836095a3.water.jpg_200x200_36727f69.jpg',
-          title: 'title',
-          desc: 'desc'
-        },
-        {
-          id: '0002',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1609/7a/7ae8ee7831836095a3.water.jpg_200x200_36727f69.jpg',
-          title: 'title',
-          desc: 'desc'
-        },
-        {
-          id: '0003',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1609/7a/7ae8ee7831836095a3.water.jpg_200x200_36727f69.jpg',
-          title: 'title',
-          desc: 'desc'
-        },
-        {
-          id: '0004',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1609/7a/7ae8ee7831836095a3.water.jpg_200x200_36727f69.jpg',
-          title: 'title',
-          desc: 'desc'
-        }
-      ]
-    }
+  props: {
+    recommendList: Array
   }
 }
 </script>
