@@ -4,7 +4,7 @@ try {
     defaultCity = localStorage.city
   }
 } catch (error) {
-  console.log(error)
+  Promise.reject(error)
 }
 
 export default {
