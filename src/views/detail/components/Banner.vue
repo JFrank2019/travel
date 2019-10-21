@@ -1,20 +1,17 @@
 <template>
   <div>
     <div @click="handleBanerClick" class="banner">
-      <img
-        alt
-        class="banner-img"
-        src="http://img1.qunarzz.com/sight/p0/201403/07/a3231208ca4095bef77068c202d95bd2.jpg_600x330_fbe0867a.jpg"
-      />
+      <img :src="this.bannerImg" alt class="banner-img" />
       <div class="banner-info">
-        <div class="banner-title">香山公园(AAAA景区)</div>
+        <div class="banner-title">{{ this.sightName }}</div>
         <div class="banner-number">
-          <span class="iconfont banner-icon">&#xe796;</span>39
+          <span class="iconfont banner-icon">&#xe796;</span>
+          {{ this.galleryImgs.length }}
         </div>
       </div>
     </div>
     <common-gallery
-      :imgs="imgs"
+      :imgs="galleryImgs"
       @close="handleGalleryClose"
       v-show="showGallery"
     ></common-gallery>
@@ -29,12 +26,13 @@ export default {
   components: {
     CommonGallery
   },
+  props: {
+    sightName: String,
+    bannerImg: String,
+    galleryImgs: Array
+  },
   data() {
     return {
-      imgs: [
-        'http://img1.qunarzz.com/sight/p0/201403/07/a3231208ca4095bef77068c202d95bd2.jpg_r_800x800_44f2e684.jpg',
-        'http://img1.qunarzz.com/sight/p0/1908/6c/6c4f551349dd8896a3.img.jpg_r_800x800_9593721e.jpg'
-      ],
       showGallery: false
     }
   },
@@ -78,6 +76,7 @@ export default {
       flex: 1;
     }
     .banner-number {
+      margin: 0 0.2rem;
       padding: 0 0.4rem;
       height: 0.4rem;
       line-height: 0.4rem;
