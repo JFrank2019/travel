@@ -1,7 +1,9 @@
 <template>
   <div class="header">
     城市选择
-    <router-link class="iconfont header-back" tag="div" to="/">&#xe682;</router-link>
+    <router-link class="iconfont header-back" tag="div" to="/"
+      >&#xe682;</router-link
+    >
   </div>
 </template>
 
